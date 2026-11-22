@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eee8dc">
+<title>人生，是一條正在延伸的路</title>
+<style>
+:root{--paper:#f2ede3;--ink:#333b37;--muted:#7b8178;--sage:#aab9ae;--blue:#8299b6;--brown:#b9a18f;--line:#d5d0c5;--white:#fbf9f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Serif TC","Songti TC",Georgia,serif;line-height:1.8}button{font:inherit}.wrap{width:min(1080px,90%);margin:auto}.hero{min-height:88vh;display:grid;align-items:center;position:relative;overflow:hidden;padding:90px 0 70px}.hero:before{content:"";position:absolute;width:620px;height:620px;border:1px solid #c9c5b9;border-radius:50%;right:-170px;top:5%;opacity:.55}.eyebrow{letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font:12px/1.5 Arial,sans-serif}.hero h1{font-size:clamp(40px,7vw,78px);line-height:1.25;font-weight:500;letter-spacing:.07em;margin:24px 0}.hero p{max-width:560px;color:#626b63;font-size:17px}.hero .hint{margin-top:42px;font:12px Arial,sans-serif;letter-spacing:.18em;color:var(--muted)}.road{position:absolute;right:8%;bottom:0;width:34%;height:58%;border-left:1px solid #c5c4b9;border-right:1px solid #c5c4b9;transform:skew(-12deg);opacity:.6}.road:after{content:"";position:absolute;left:50%;height:100%;border-left:1px dashed #b5b6aa}.section{padding:85px 0}.section-head{max-width:650px;margin-bottom:38px}.section h2{font-size:clamp(27px,4vw,42px);font-weight:500;letter-spacing:.08em;margin:8px 0 12px}.section-head p,.intro{color:#68716a}.timeline-shell{display:grid;grid-template-columns:260px 1fr;gap:42px;align-items:start}.timeline-nav{position:sticky;top:22px;display:flex;flex-direction:column;gap:8px}.stage-btn{border:0;background:transparent;text-align:left;padding:12px 14px;border-left:2px solid var(--line);color:#737970;cursor:pointer;transition:.2s}.stage-btn span{display:block;font:11px Arial,sans-serif;letter-spacing:.12em;color:#96998f}.stage-btn strong{font-size:16px;font-weight:500}.stage-btn:hover,.stage-btn.active{background:#e8e5da;border-left-color:var(--blue);color:var(--ink)}.stage-card{background:var(--white);padding:clamp(26px,5vw,54px);min-height:390px;border:1px solid #e5e0d5;box-shadow:0 14px 45px #4b4b3d0a;position:relative}.stage-number{font:12px Arial,sans-serif;letter-spacing:.2em;color:var(--blue)}.stage-card h3{font-size:clamp(30px,4vw,44px);font-weight:500;margin:12px 0 4px}.age{color:var(--muted);font:12px Arial,sans-serif;letter-spacing:.12em}.stage-card .story{font-size:17px;max-width:650px;margin:30px 0;color:#555f58}.reflection{border-top:1px solid var(--line);padding-top:22px;margin-top:35px;color:#7b8178;font-size:14px}.reflection b{display:block;color:var(--ink);font-weight:500;margin-bottom:6px}.controls{display:flex;justify-content:space-between;align-items:center;margin-top:20px;gap:12px}.control{border:1px solid #c9c8bd;background:transparent;padding:9px 16px;cursor:pointer;color:var(--ink)}.control:hover{background:#e7e4da}.dots{font:12px Arial,sans-serif;color:var(--muted)}.youth{background:#e8edf0;padding:80px 0}.youth-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.youth-art{min-height:330px;background:linear-gradient(145deg,#8198b5,#aab9c8);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;color:#f8f5ed}.youth-art:before,.youth-art:after{content:"";position:absolute;border:1px solid #ffffff70;border-radius:50%;width:270px;height:270px}.youth-art:after{width:390px;height:390px}.youth-art .big{font-size:clamp(44px,7vw,76px);letter-spacing:.14em;z-index:1}.youth-copy h2{font-size:clamp(28px,4vw,42px);font-weight:500;margin:12px 0}.youth-copy p{color:#56636c}.song-label{display:inline-block;border-bottom:1px solid #879eae;padding-bottom:5px;letter-spacing:.12em;margin:8px 0 20px}.quote{font-size:17px;line-height:2;color:#45535d}.end{padding:95px 0;text-align:center}.end h2{font-size:clamp(30px,5vw,48px);font-weight:500}.end p{max-width:590px;margin:20px auto;color:#69736b}.word-list{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:30px auto}.word{border:1px solid #c7c7bb;background:transparent;padding:10px 20px;cursor:pointer;color:#59645d}.word.selected{background:var(--sage);border-color:var(--sage);color:#26372e}.message{min-height:52px;color:#59645d;font-size:16px}.restart{margin-top:15px;border:0;border-bottom:1px solid #9ca69d;background:none;padding:8px;cursor:pointer;color:#68716a}.footer{padding:25px 0;border-top:1px solid var(--line);font:11px Arial,sans-serif;letter-spacing:.1em;color:#888d83;text-align:center}
+@media(max-width:760px){.hero{min-height:78vh}.road{right:-8%;width:42%;opacity:.35}.timeline-shell{grid-template-columns:1fr;gap:20px}.timeline-nav{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.stage-btn{padding:9px;border-left-width:2px}.stage-btn strong{font-size:14px}.stage-card{min-height:420px}.youth-grid{grid-template-columns:1fr;gap:28px}.youth-art{min-height:230px}.section{padding:65px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="wrap">
+  <div class="eyebrow">A JOURNEY THROUGH TIME · INTERACTIVE STORY</div>
+  <h1>人生，是一條<br>正在延伸的路。</h1>
+  <p>從最初睜開眼睛，到某一天回望來時的方向。每一段路都有不同的風景，而每一次相遇、選擇與告別，都成為生命的一部分。</p>
+  <div class="hint">SCROLL DOWN · 點選人生階段，走進時間裡</div>
+ </div><div class="road" aria-hidden="true"></div>
+</header>
+<main>
+<section class="section" id="journey">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">CHAPTER 01 — THE TIMELINE</div><h2>沿著時間，慢慢往前走</h2><p>人生沒有統一的進度表。以下是想像中的生命旅程，你可以點選不同年齡，看看每個階段可能藏著什麼風景。</p></div>
+  <div class="timeline-shell">
+   <nav class="timeline-nav" id="timelineNav" aria-label="人生階段"></nav>
+   <article class="stage-card" aria-live="polite">
+    <div class="stage-number" id="stageNumber">01 / 08</div><h3 id="stageTitle">起點</h3><div class="age" id="stageAge">0 — 6 YEARS OLD</div>
+    <p class="story" id="stageStory"></p>
+    <div class="reflection"><b>留給你的問題</b><span id="stageQuestion"></span></div>
+    <div class="controls"><button class="control" id="prev">← 上一段</button><span class="dots" id="stageCount">01 · 08</span><button class="control" id="next">下一段 →</button></div>
+   </article>
+  </div>
+ </div>
+</section>
+<section class="youth" id="youth">
+ <div class="wrap youth-grid">
+  <div class="youth-art" role="img" aria-label="以藍色圓環象徵青春與記憶"><div class="big">少年時代</div></div>
+  <div class="youth-copy">
+   <div class="eyebrow">CHAPTER 02 — THE SOUND OF YOUTH</div>
+   <h2>青春，是記憶裡的一段旋律。</h2>
+   <div class="song-label">時代少年團 ·《少年時代》</div>
+   <p class="quote">有些相遇，不一定發生在現實生活裡，卻依然能在生命中留下痕跡。</p>
+   <p>一首反覆播放的歌曲、一個在舞台上閃閃發光的身影，或是一段被音樂陪伴的日子，都可能成為青春的註腳。多年以後再次想起，記得的不只是喜歡過的人事物，還有那個曾經熱烈而真誠的自己。</p>
+   <p>這一頁獻給每一個曾經因為喜歡，而讓平凡日子變得明亮的瞬間。</p>
+  </div>
+ </div>
+</section>
+<section class="section">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">CHAPTER 03 — LOOKING BACK</div><h2>記憶，讓走過的路有了形狀</h2><p>照片留下某個瞬間，音樂收藏一段心情，而我們也在不知不覺間，成為了和過去不同的人。</p></div>
+  <p class="intro">也許長大以後才懂，珍貴的不只是抵達過哪裡，而是一路上曾經陪伴自己的人、看過的風景，以及每個階段努力生活的自己。</p>
+ </div>
+</section>
+<section class="end" id="ending">
+ <div class="wrap">
+  <div class="eyebrow">CHAPTER 04 — YOUR STORY</div>
+  <h2>現在的你，想帶著什麼繼續前進？</h2>
+  <p>選一個最接近此刻心情的詞。沒有標準答案，這只是你寫給現在自己的小小註記。</p>
+  <div class="word-list" role="group" aria-label="選擇代表自己的詞">
+   <button class="word" data-word="探索">探索</button><button class="word" data-word="勇氣">勇氣</button><button class="word" data-word="珍惜">珍惜</button><button class="word" data-word="改變">改變</button><button class="word" data-word="期待">期待</button>
+  </div>
+  <div class="message" id="message" aria-live="polite">你的人生故事，仍然正在書寫。</div>
+  <button class="restart" id="restart">重新走一次這段旅程 ↗</button>
+ </div>
+</section>
+</main>
+<footer class="footer">A JOURNEY THROUGH TIME · 人生，是一條正在延伸的路</footer>
+<script>
+const stages=[
+ {title:"起點",age:"0 — 6 YEARS OLD",tag:"世界初次展開",story:"生命從一個小小的起點開始。世界很大，眼前的一切都新鮮而陌生。有人牽著手，陪我們認識聲音、顏色與遠方。那時候還不懂什麼叫成長，卻已經在每一次好奇裡，慢慢認識這個世界。",question:"你還記得自己最早的一段回憶嗎？"},
+ {title:"童年",age:"7 — 12 YEARS OLD",tag:"認識世界",story:"童年像一段明亮的午後。遊戲、朋友、家人的陪伴，還有那些看似平凡的小事，拼成了最初的記憶。當時只顧著向前跑，未曾想過有一天，這些日常會成為想念的風景。",question:"如果能回到童年一天，你最想重新經歷什麼？"},
+ {title:"青春",age:"13 — 18 YEARS OLD",tag:"尋找自己的模樣",story:"青春開始有了自己的節奏。課堂、朋友、夢想與迷惘交錯出現，我們逐漸發現自己喜歡什麼、在意什麼，也開始思考想成為怎樣的人。喜歡的音樂、欣賞的身影，都可能在某個時刻給我們力量。",question:"有什麼人、事、物，成為你青春裡重要的註腳？"},
+ {title:"遠行",age:"19 — 29 YEARS OLD",tag:"面對選擇",story:"道路逐漸分岔，選擇也變得更多。離開熟悉的地方，遇見不同的人，嘗試新的生活。或許會猶豫，也可能走錯方向，但每一次決定，都讓我們更靠近想成為的自己。",question:"如果未來有一扇新的門，你希望自己有勇氣推開嗎？"},
+ {title:"途中",age:"30 — 49 YEARS OLD",tag:"承擔與生活",story:"生活不再只有遠方，也有需要照顧的人、必須完成的事，以及日復一日的責任。在忙碌之中，仍然可以為自己留下空間，記得最初的願望，也記得生活不只是一場趕路。",question:"你希望未來的生活裡，無論多忙都不要失去什麼？"},
+ {title:"回望",age:"50 — 69 YEARS OLD",tag:"理解過去",story:"走過許多路之後，開始懂得有些答案不必急著找到。曾經的選擇、遇見的人、錯過的風景，都成為生命的一部分。回頭看時，也許會發現，自己早已比想像中走得更遠。",question:"你希望多年後的自己，會如何看待現在的選擇？"},
+ {title:"遠方",age:"70+ YEARS OLD",tag:"沉澱與分享",story:"時間讓腳步慢下來，也讓回憶變得清晰。那些曾經珍惜的人與事，成為可以分享的故事。人生的價值不只在於走了多遠，也在於曾經如何感受、如何愛人，以及如何度過每一天。",question:"如果能留下一個故事給後來的人，你想分享什麼？"},
+ {title:"未完待續",age:"THE NEXT CHAPTER",tag:"未來仍有可能",story:"人生不是一條早已決定終點的道路。即使走到某個段落，仍然可以重新選擇、重新出發。未來的模樣還沒有被寫下，而下一頁，正等待自己慢慢完成。",question:"你想對未來的自己說哪一句話？"}
+];
+let current=0;
+const nav=document.getElementById("timelineNav");
+stages.forEach((s,i)=>{const b=document.createElement("button");b.className="stage-btn";b.innerHTML='<span>0'+(i+1)+' / '+s.age+'</span><strong>'+s.title+'</strong>';b.addEventListener("click",()=>show(i));nav.appendChild(b)});
+function show(i){current=(i+stages.length)%stages.length;const s=stages[current];document.getElementById("stageNumber").textContent="0"+(current+1)+" / 08";document.getElementById("stageTitle").textContent=s.title;document.getElementById("stageAge").textContent=s.age;document.getElementById("stageStory").textContent=s.story;document.getElementById("stageQuestion").textContent=s.question;document.getElementById("stageCount").textContent="0"+(current+1)+" · 08";document.querySelectorAll(".stage-btn").forEach((b,j)=>{b.classList.toggle("active",j===current);b.setAttribute("aria-current",j===current?"step":"false")})}
+document.getElementById("prev").addEventListener("click",()=>show(current-1));document.getElementById("next").addEventListener("click",()=>show(current+1));
+document.querySelectorAll(".word").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".word").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");document.getElementById("message").textContent="你選擇了「"+b.dataset.word+"」。願這個詞，陪你走向下一段風景。"}));
+document.getElementById("restart").addEventListener("click",()=>{show(0);document.querySelectorAll(".word").forEach(x=>x.classList.remove("selected"));document.getElementById("message").textContent="你的人生故事，仍然正在書寫。";document.getElementById("journey").scrollIntoView({behavior:"smooth"})});
+show(0);
+</script>
+</body>
+</html>
